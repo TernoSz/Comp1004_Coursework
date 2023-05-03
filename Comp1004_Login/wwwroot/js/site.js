@@ -3,12 +3,8 @@
 // Important: it is yet insecure when compared to real databases and should not be used
 // in deployment.
 let user_db;
-if (!localStorage.getItem("Accessed")) {
-    fetch("./js/users.json").then((response) => response.json()).then((data) => user_db = data);
-} else {
-    user_db = localStorage.getItem("user_db");
-    console.log("Data Access: Local Storage.");
-}
+fetch("./js/users.json").then((response) => response.json()).then((data) => user_db = data);
+
 
 // The "flare" effect following the cursour
 // The space in which the effect will exist by defining the element
@@ -183,9 +179,6 @@ const processInputs = function (choice) {
             };
 
             user_db.users.push(new_user);
-
-            localStorage.setItem("Accessed", true);
-            localStorage.setItem("user_db", user_db);
 
             return alert("Registration Successful! Please now log in!")
         }
