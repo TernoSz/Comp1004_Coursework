@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Login Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/site.css" />
+    
+</head>
+<body>
+    <div class="login_page_container">
+        <div class="login_navbar">
+            <h2>Welcome</h2>
+        </div>
+
+
+        <div class="login_forms_container">
+            <div class="loginPage_main_container">
+                <div class="login_container parallax1">
+                    <h3 class="login_message">Login</h3>
+                    <form class="login_form">
+                        <p class="login_email_title">Account Email:</p>
+                        <input id="login_email" class="login_text_input" type="email" placeholder="email.example@gmail.com" />
+                        <p class="login_password_title">Password:</p>
+                        <input id="login_password" class="login_text_input" type="password" placeholder="password" />
+                    </form>
+                    <button class="login_button">Log in</button>
+                </div>
+            </div>
+
+
+            <div class="loginPage_main_container signupPage_main_container">
+                <div class="login_container parallax2">
+                    <h3 class="login_message">Sign up</h3>
+                    <form class="login_form">
+                        <p class="login_email_title signupEmail">Account Email:</p>
+                        <input id="signup_email" class="login_text_input" type="email" placeholder="email.example@gmail.com" />
+                        <p class="login_password_title">Password:</p>
+                        <input id="signup_password" class="login_text_input passwordRepeat1" type="password" placeholder="password" />
+                        <p class="login_password_title">Repeat Password:</p>
+                        <input id="signup_password_repeat" class="login_text_input passwordRepeat2" type="password" placeholder="password" />
+                    </form>
+                    <button class="signup_button">Sign up</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="login_footer">
+            <div class="login_credits">
+                <p>Comp1004 - Jakub Szelag </p>
+            </div>
+            <div class="login_redirection">
+                <div class="login_redirection_switch"></div>
+                <p class="login_redirection_register">
+                    Sign up!
+                </p>
+                <span> | </span>
+                <p class="login_redirection_login login_active_switch">
+                    Log in!
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="js/site.js"></script>
+</body>
+</html>
